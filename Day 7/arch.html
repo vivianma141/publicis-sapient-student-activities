@@ -1,0 +1,24 @@
+<html>
+<body>
+    <canvas id = "c1" style = "border:2px solid black" width = "400" height="400"></canvas>
+    <script type="text/javascript">
+        let ctx = document.getElementById('c1').getContext('2d');
+        ctx.fillStyle = 'red';
+        ctx.beginPath();
+        ctx.arc(100,100,20,0, Math.PI, true);
+        ctx.fill();
+        ctx.fillStyle = 'yellow';
+        ctx.beginPath();
+        ctx.arc(400,400,10,0, Path.PI, true);
+        ctx.fill();
+        //for(int i = 0; i < 5; i++) {
+          //  ctx.beginPath();
+          //  ctx.arc(200+(i*10),200,10,0, Math.PI, true);
+         //   ctx.fill();
+          //  ctx.fillStyle = 'yellow';
+       // }
+
+    </script>
+
+</body>
+</html>

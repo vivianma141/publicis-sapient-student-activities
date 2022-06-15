@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+      <title>Document</title>
+  </head> 
+    <body>
+        <h1>Form</h1>
+       <form name="login" method = "post" action = "#" onsubmit="reqName()">
+           <label>
+               Name <input type = "text" name = "user" placeholder = "enter name here"/> 
+           </label>
+           <br />
+
+           <label>
+               Age <input type = "number" placeholder="enter your age"/>
+           </label>
+           <br />
+           <label>
+            Date of Birth <input type = "date"/>
+        </label>
+        <br />
+           <label>
+                Gender <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+           </label>    
+            <br />
+            
+            <label>
+                Skills <input type="checkbox" id="skill1" name="skill1" value="c++">
+                <label for="skill1"> C++</label>
+                <input type="checkbox" id="skill2" name="skill2" value="html">
+                <label for="skill2"> HTML</label>
+                <input type="checkbox" id="skill3" name="skill3" value="java">
+                <label for="skill3"> Java</label>
+                <input type="checkbox" id="skill4" name="skill4" value="kotlin">
+                <label for="skill4"> Kotlin</label>
+            </label>
+            <br />
+
+            <label for="qual">Qualifications:</label>
+            <select id="qual" name="qualifications">
+                <option value="Bachelors in CS">Bachelors in CS</option>
+                <option value="Masters">Masters in CS</option>
+                <option value="HS">HS Degree</option>
+            </select>
+            <br />
+
+
+            <input type = "submit" value = "register"/>
+            <input type = "submit" value = "reset"/>
+
+
+       </form>
+       <script type = "text/javascript">
+           function reqName() {
+               let login = document.login;
+               let user = login.user;
+               if(user.value.length <= 3) {
+                   alert('Please enter a longer name!');
+                   return false;
+               }
+              
+
+           }
+       </script>
+        
+    </body>
+</html>
